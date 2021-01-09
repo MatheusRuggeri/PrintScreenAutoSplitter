@@ -34,3 +34,4 @@ for f in files:
             # Exports the files as xxx_1.png and xxx_2.png
             cv2.imwrite(path + "\\" + nameWithoutExtention + "_1.png", s1)
             cv2.imwrite(path + "\\" + nameWithoutExtention + "_2.png", s2)
+            os.remove(os.path.join(path,f))
